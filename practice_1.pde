@@ -3,7 +3,8 @@ float t, t1, t2;
 
 void setup() {
   size(800, 800);
-  strokeWeight(1);
+  stroke(150);
+  strokeWeight(1.5);
 }
 
 float x1(float t) {
@@ -31,8 +32,6 @@ void draw() {
   t1=((1.0*frameCount)/750.0)%5;
   t2=((1.0*frameCount)/500.0)%5;
   background(10);
-  stroke(150);
-  strokeWeight(1.5);
   pushMatrix();
   ellipse(x1(t+0.2), y1(t1+0.2), 10, 10);
   popMatrix();
