@@ -15,11 +15,11 @@ void draw(){
   background(0);
   tx = map(mouseX,0,width,0.006,0.02);
   if (keyPressed == true) {
-  nt = lerp(nt,5,0.01);
-  tt = lerp(tt,5,0.03);
+    nt = lerp(nt,5,0.01);
+    tt = lerp(tt,5,0.03);
   } else{
-  nt = lerp(nt,400,0.01);
-  tt = lerp(tt,1,0.01);
+    nt = lerp(nt,400,0.01);
+    tt = lerp(tt,1,0.01);
   }
   while(x<width-100){
     point(x, height/4+height*(noise(x/nt, time))*0.5);
